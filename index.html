@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR SECTION -->
+
+    <nav>
+        <div class="nav-left">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Collections</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="shopping">
+                <img src="images/icon-cart.svg" alt="">
+            </div>
+
+            <div class="avatar">
+                <img src="images/image-avatar.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+     <!-- CONTENT SECTION -->
+
+     <hr width="94%" color="#000" size="1" style="margin: 0 auto; opacity: 0.2;">
+
+    <div class="container">
+        
+        <div class="content-left">
+            <div class="main-image">
+                <img id="mainImage" src="images/big1.jpg" width="500" height="400" alt="">
+            </div>
+            <div class="mini-images">
+
+
+                <a href="#" onclick="changePicture(1);" >
+                    <img id="minpic1"  onclick="changeClass(1);"  src="images/mini1.jpg" width="100" height="100" alt="">
+                </a>
+
+                <a href="#" onclick="changePicture(2);">
+                    <img id="minpic2" onclick="changeClass(2);" src="images/mini2.jpg" width="100" height="100" alt="">
+                </a>
+
+                <a href="#" onclick="changePicture(3);">
+                    <img id="minpic3"  onclick="changeClass(3);" src="images/mini3.jpg" width="100" height="100" alt="">
+                </a>
+
+                <a href="#" onclick="changePicture(4);">
+                    <img id="minpic4" onclick="changeClass(4);" src="images/mini4.jpg" width="100" height="100" alt="">
+                </a>
+
+
+            </div>
+        </div>
+
+        <div class="content-right">
+            <div class="card">
+                <h5>Sneaker Company</h5>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p class="card-text">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div class="price">
+                    <div>
+                        <span>$125.00</span>
+                        <span>50%</span>
+                    </div>
+                    <span>$250.00</span>
+                </div>
+
+                <div class="shoppingCart">
+                    <div>
+                        <span><img class="eksi-arti" src="images/icon-minus.svg" width="70%" alt=""></span>
+                        <span class="span-quantity"><p class="quantity">0</p></span>
+                        <span><img class="eksi-arti" src="images/icon-plus.svg"  width="75%" alt=""></span>
+                    </div>
+                    <div>
+                        <button class="shopping-button"><img src="images/icon-cart.svg" width="15px" alt=""> Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> Coded by <a href="https://github.com/Cinar00">Beytullah ÇINAR</a>
+    </div> 
+
+
+
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
